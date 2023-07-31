@@ -217,7 +217,35 @@ os.system('espeak -a 400 " Your,   Real,  Name,"')
 uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
 os.system('espeak -a 400 " Welcome,   to,  Vampire,  Tool"')
 pass
+
+
+def notice():
+
  
+
+	runtxt("\n\033[0;91mYOU ARE NOT PREMIUM USER ")
+	runtxt("\033[0;93m  SENT THIS KEY TO ADMIN >> %s%s"%(G,basesplit))
+	runtxt("\033[0;92m ADMIN MESSENGER🔰VǢMPÏRÊ᭄ ゝ༺ʚĩɞ༻")
+	subprocess.check_output(["am", "start", "https://m.me/USER.AGENT.LUCIFER.JUSTIN.TONMOY.I.CAN.FcK.UR.MOM"])
+
+
+	plr = requests.get('https://github.com/justinlucifer/Approval-/blob/main/Approval.txt').text
+			if basesplit in plr:
+				key = basesplit
+				stat = ("\033[0;92mPREMIUM")
+				FY = '\033[0;93m'
+				FG = '\033[0;92m'
+				GET = '\r'
+			else:
+				key = ("\033[0;91m -")
+				stat = ("\033[0;91mFREE USER")
+				FY = '\033[0;90m'
+				FG = '\033[0;90m'
+				GET = '\033[0;92m [P] GET PREMIUM'
+		except requests.exceptions.ConnectionError:
+			print("\n%s [!] NO INTERNET CONNECTION..\n"%(G))
+			exit()
+		os.system("clear")
  
 def login():
     try:
